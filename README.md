@@ -1,1 +1,1 @@
-This is a simple python script that logs the primary selection of X11 display manager
+This is a simple python script that logs the primary selection of X11
