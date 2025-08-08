@@ -27,4 +27,4 @@ while (True):
         with open(log_file_path, "ab") as f:
             f.write((selection + "\n").encode("utf-8"))
 
-         time.sleep(0.2)
+    time.sleep(0.2)
