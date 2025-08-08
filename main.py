@@ -21,7 +21,7 @@ def get_primary_selection():
 
 last_selection = None
 
-while (True):
+def run_daemon():
     latest_selection = get_primary_selection()
     if (latest_selection != last_selection):
         last_selection = latest_selection
