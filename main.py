@@ -26,7 +26,7 @@ while (True):
     timestamp = datetime.now().strftime("[%Y-%m-%d %H:%M:%S]")
     if (latest_selection != last_selection):
         last_selection = latest_selection
-        stamp = f"{timestamp} {selection}\n"
+        stamp = f"{timestamp} {latest_selection}\n"
         with open(log_file_path, "ab") as f:
             f.write((stamp + "\n").encode("utf-8"))
 
