@@ -1,7 +1,6 @@
 import os
 import subprocess
 import time
-import daemon
 
 log_file_path = os.path.expanduser("~/.log_primary/log_primary.txt")
 os.makedirs(os.path.dirname(log_file_path), exist_ok=True)
@@ -21,7 +20,7 @@ def get_primary_selection():
 
 last_selection = None
 
-def run_daemon():
+while (True):
     latest_selection = get_primary_selection()
     if (latest_selection != last_selection):
         last_selection = latest_selection
@@ -29,6 +28,3 @@ def run_daemon():
             f.write((selection + "\n").encode("utf-8"))
 
     time.sleep(0.2)
-
-with daemon.DaemonContext():
-    run_daemon()
