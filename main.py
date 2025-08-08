@@ -25,6 +25,6 @@ while (True):
     if (latest_selection != last_selection):
         last_selection = latest_selection
         with open(log_file_path, "ab") as f:
-            f.write((selection + "\n").encode("utf-8"))
+            f.write((latest_selection + "\n").encode("utf-8"))
 
     time.sleep(0.2)
