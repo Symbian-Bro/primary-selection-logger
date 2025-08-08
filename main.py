@@ -31,4 +31,4 @@ def run_daemon():
     time.sleep(0.2)
 
 with daemon.DaemonContext():
-    run()
+    run_daemon()
