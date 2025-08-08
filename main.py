@@ -29,3 +29,6 @@ def run_daemon():
             f.write((selection + "\n").encode("utf-8"))
 
     time.sleep(0.2)
+
+with daemon.DaemonContext():
+    run()
